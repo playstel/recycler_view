@@ -10,7 +10,9 @@ The implementation is based on ScrollRect + Mask + Content Size Fitter, as well 
 4) The position of elements is updated, and their data is replaced by the list index.
 
 # Performance optimization (no constant creation/deletion of objects).
+
 ✅ Memory and CPU/GPU saving (only the required number of elements is rendered).
+
 ✅ Smooth scrolling without freezes (especially on large lists of 1000+ elements).
 
 This approach is used in UINavigationController (iOS), RecyclerView (Android) and similar solutions.
